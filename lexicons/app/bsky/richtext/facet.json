@@ -40,35 +40,11 @@
     },
     "bold": {
       "type": "object",
-      "description": "Facet feature for bolded text.",
-      "required": ["text"],
-      "properties": {
-        "text": { "type": "string" }
-      }
+      "description": "Facet feature for bolded text."
     },
     "italic": {
       "type": "object",
-      "description": "Facet feature for italicised text.",
-      "required": ["text"],
-      "properties": {
-        "text": { "type": "string" }
-      }
-    },
-    "strikethrough": {
-      "type": "object",
-      "description": "Facet feature for struckthrough text.",
-      "required": ["text"],
-      "properties": {
-        "text": { "type": "string" }
-      }
-    },
-    "underline": {
-      "type": "object",
-      "description": "Facet feature for underlined text.",
-      "required": ["text"],
-      "properties": {
-        "text": { "type": "string" }
-      }
+      "description": "Facet feature for italicised text."
     },
     "byteSlice": {
       "type": "object",

@@ -10,7 +10,7 @@
         "index": { "type": "ref", "ref": "#byteSlice" },
         "features": {
           "type": "array",
-          "items": { "type": "union", "refs": ["#mention", "#link", "#tag"] }
+          "items": { "type": "union", "refs": ["#mention", "#link", "#tag", "#bold", "#italic", "#strikethrough", "#underline"] }
         }
       }
     },
@@ -36,6 +36,38 @@
       "required": ["tag"],
       "properties": {
         "tag": { "type": "string", "maxLength": 640, "maxGraphemes": 64 }
+      }
+    },
+    "bold": {
+      "type": "object",
+      "description": "Facet feature for bolded text.",
+      "required": ["text"],
+      "properties": {
+        "tag": { "type": "string" }
+      }
+    },
+    "italic": {
+      "type": "object",
+      "description": "Facet feature for italicised text.",
+      "required": ["text"],
+      "properties": {
+        "tag": { "type": "string" }
+      }
+    },
+    "strikethrough": {
+      "type": "object",
+      "description": "Facet feature for struckthrough text.",
+      "required": ["text"],
+      "properties": {
+        "tag": { "type": "string" }
+      }
+    },
+    "underline": {
+      "type": "object",
+      "description": "Facet feature for underlined text.",
+      "required": ["text"],
+      "properties": {
+        "tag": { "type": "string" }
       }
     },
     "byteSlice": {

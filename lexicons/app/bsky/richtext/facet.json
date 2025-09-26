@@ -43,7 +43,7 @@
       "description": "Facet feature for bolded text.",
       "required": ["text"],
       "properties": {
-        "tag": { "type": "string" }
+        "text": { "type": "string" }
       }
     },
     "italic": {
@@ -51,7 +51,7 @@
       "description": "Facet feature for italicised text.",
       "required": ["text"],
       "properties": {
-        "tag": { "type": "string" }
+        "text": { "type": "string" }
       }
     },
     "strikethrough": {
@@ -59,7 +59,7 @@
       "description": "Facet feature for struckthrough text.",
       "required": ["text"],
       "properties": {
-        "tag": { "type": "string" }
+        "text": { "type": "string" }
       }
     },
     "underline": {
@@ -67,7 +67,7 @@
       "description": "Facet feature for underlined text.",
       "required": ["text"],
       "properties": {
-        "tag": { "type": "string" }
+        "text": { "type": "string" }
       }
     },
     "byteSlice": {
